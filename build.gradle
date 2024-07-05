@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'application'
+}
+
+sourceCompatibility = 1.11
+
+group 'nl.idgis'
+version '1.0-SNAPSHOT'
+
+mainClassName = project.hasProperty("mainClass") ? project.hasProperty("mainClass") : "nl.idgis.gioimporter.Main"
+
+ext {
+    springVersion = "5.3.24"
+    postgresVersion = "42.3.3"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.postgresql:postgresql:$postgresVersion")
+
+    implementation("org.springframework:spring-core:$springVersion")
+    implementation("org.springframework:spring-context:$springVersion")
+    implementation("org.springframework:spring-jdbc:$springVersion")
+}
