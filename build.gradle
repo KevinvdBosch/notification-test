@@ -12,7 +12,7 @@ version '1.0-SNAPSHOT'
 mainClassName = project.hasProperty("mainClass") ? project.hasProperty("mainClass") : "nl.idgis.gioimporter.Main"
 
 ext {
-    springVersion = "5.3.24"
+    springVersion = "6.1.10"
     postgresVersion = "42.3.3"
 }
 
