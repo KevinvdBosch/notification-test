@@ -13,7 +13,7 @@ mainClassName = project.hasProperty("mainClass") ? project.hasProperty("mainClas
 
 ext {
     springVersion = "5.3.24"
-    postgresVersion = "42.3.3"
+    postgresVersion = "42.7.3"
 }
 
 repositories {
